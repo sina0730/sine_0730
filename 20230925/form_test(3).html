@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    fieldset {
+      width: 300px;
+      height: auto;
+      border-color: aqua;
+    }
+    legend {
+      background-color: #000;
+      color: aquamarine;
+      align:
+      border:
+    }
+  </style>
+  <body>
+    <form>
+      <p>고객 명: <input type="text" name="name" placeholder="홍길동" /></p>
+      <p>
+        전화번호:
+        <input
+          type="tel"
+          name="tel"
+          placeholder="010-1111-2222"
+          pattern="[0-9]{3}-[0-9]{3-4}-[0-9]{4}"
+          title="010-1111-2222"
+        />
+      </p>
+      <p>E-mail: <input type="email" name="email" /></p>
+
+      <fieldset>
+        <legend>피자 사이즈</legend>
+        <p>
+          <label for="small">Small</label>
+          <input type="radio" name="gender" id="small" /><br />
+        </p>
+
+        <p>
+          <label for="medium">Medium</label>
+          <input type="radio" name="gender" id="medium" /><br />
+        </p>
+
+        <p>
+          <label for="large">Large</label>
+          <input type="radio" name="gender" id="large" /><br />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>토핑 선택</legend>
+        <label for="1">베이컨</label>
+        <input type="checkbox" name="la" id="1" /><br />
+        <label for="2">치즈</label>
+        <input type="checkbox" name="la" id="2" /><br />
+        <label for="3">양파</label>
+        <input type="checkbox" name="la" id="3" /><br />
+        <label for="4">버섯</label>
+        <input type="checkbox" name="la" id="4" /><br />
+      </fieldset>
+
+      <p>희망배송시간 : <input type="time" name="time" /></p>
+      <p>배송시 요청사항 : <textarea rows="2" cols="30"></textarea></p>
+
+      <input type="submit" value="주문하기">
+      <input type="reset" value="다시 선택하기">
+    </form>
+  </body>
+</html>
