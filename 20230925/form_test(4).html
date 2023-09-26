@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  fieldset {
+    width: 300px;
+      height: auto;
+      border-color: aqua
+  }
+</style>
+<body>
+  <form>
+    <fieldset>
+      <legend>납품자정보</legend>
+      <p>
+        <ol start="1" type="1">
+          
+          <li><p>납품자명 : <input type="text" name="name" placeholder="김철수"></p></li>
+          <li><p>Email : <input type="email" name="email" placeholder="abcdef123@naver.com"></p></li>
+          <li><p>홈페이지 : <input type="url" name="url" placeholder="http://" repuiered/></p></li>
+          
+        </ol>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>납품정보</legend>
+      <ul>
+        <p><li>상품평 : <input type="text" name="name" placeholder="아이폰"></li></p>
+        <p><li>납품수량 : <input type="number" name="number" min="100" max="1000" step="4" placeholder="최소100"></li></p>
+        <p><li>납품등급 : <input type="range" name="range" min="1" max="10" step="2"></li></p>
+        <p><li>기타사항 : <textarea rows="2" cols="20"></textarea></li></p>
+      </ul>
+    </fieldset>
+    <input type="submit" value="send message">
+  </form>
+  
+</body>
+</html>

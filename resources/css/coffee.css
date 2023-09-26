@@ -1,0 +1,19 @@
+h1, p {
+  font-family: serif;
+  color: rgb(160, 121, 70);
+}
+span {font-size: 1.7em; color: rgb(145, 113, 66);
+}
+em {font-size: 1.5em; color: rgb(163, 81, 48);}
+h1 {
+  border-bottom: 1px solid rgb(99, 86, 86);
+  color: rgb(175, 118, 64);
+}
+body {
+  font-size: 13px;
+  background-color: rgb(253, 221, 179);
+}
+h3 {
+  background-color: yellow;
+  border: 2px rgb(205, 13, 13);
+}
