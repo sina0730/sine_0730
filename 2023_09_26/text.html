@@ -7,7 +7,7 @@
     <style>
       h1 {
         text-align: center;
-        color: red;
+        color: rgb(39, 2, 92);
       } /* 중앙정렬 */
       p.date {
         height: 100px;
@@ -35,7 +35,20 @@
       }
       h1.dae {text-decoration:overfline;}
       h2 {text-decoration:line-through;}
-      h3 {text-decoration:underline;} /* a태그  */ 
+      h3 {text-decoration:underline;} /* a태그의  */
+      
+      p.upper {
+        text-transform:uppercase;
+      }
+      p.lower {
+        text-transform: lowercase;
+      }
+      p.capit {
+        text-transform: capitalize;
+      }
+      h1.coi {
+        text-shadow: 5px 5px 5px #5e81ac;
+      }
     </style>
   </head>
   <body>
@@ -51,5 +64,11 @@
     <h1 class="dae">텍스트 장식의 예입니다.</h1>
     <h2>텍스트 장식의 예입니다.</h2>
     <h3>텍스트 장식의 예입니다.</h3>
+
+    <p class="upper">text_transform is uppercase.</p>
+    <p class="lower">text_transform is lowercase.</p>
+    <p class="capit">text_transform is capitalize.</p>
+
+    <h1 class="coi">Text-shadow 처리!</h1>
   </body>
 </html>
