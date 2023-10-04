@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* table, td, th {
+      border: 1px solid green;
+    }
+    table {
+      width: 25%;
+    }
+    td {
+      text-align: center;
+    }
+    th {
+      background-color: green;
+      color: wheat;
+    }
+    caption {
+      caption-side: bottom;
+    } */
+    /* table { 
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid blue;
+    } */
+    /* #list {
+      font-family: "Trebuhet MS",sans-serif; width: 100%;
+    }
+    #list td, #list th {
+      border: 1px dotted gray;
+    }
+    #list th {
+      color: white; background-color: blue;
+    }
+    #list tr.alt td {
+      background-color: yellow; 
+    }*/
+    tr:nth-child(odd) {
+      background-color: green;
+    }
+    tr:nth-child(even) {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <table id="list">
+    <caption>VIP 고객 리스트</caption>
+    <tr>
+      <th>이름</th>
+      <th>이메일</th>
+    </tr>
+    <tr>
+      <th>김수진</th>
+      <td>sujin@google.com</td>
+    </tr>
+    <tr class="alt">
+      <th>김철수</th>
+      <td>chyl@google.com</td>
+    </tr>
+    <tr>
+      <th>김영희</th>
+      <td>youn@google.com</td>
+    </tr>
+    <tr class="alt">
+      <th>홍길동</th>
+      <td>hong!google.com</td>
+    </tr>
+  </table>
+</body>
+</html>
