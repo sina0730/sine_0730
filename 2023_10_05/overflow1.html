@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>overflow 테스트</title>
+</head>
+<style>
+  p {
+    background-color: lightgreen;
+    width: 200px;
+    height: 50px;
+  }
+  #target {
+    border: 1px solid black;
+    width: 300px;
+    height: 100px; 
+    overflow: hidden;
+    /* hidden : 부모 영역 벗어남 */
+    /* scroll : 부모 영역을 벗나는 부분을 스크롤 할 수 있도록 한다/안 한다 */
+    /* auto : 자동으로 스크롤 바가 나타남(안 생길 수도 있음) */
+  }
+</style>
+<body>
+  <div id="target">
+   <p>block #1</p>
+   <p>block #2</p>
+   <p>block #3</p>
+   <p>block #4</p>
+   <p>block #5</p>
+</body>
+  </div>
+</html>
