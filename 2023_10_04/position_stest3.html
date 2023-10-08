@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포지션 연습3</title>
+</head>
+<style>
+  #one {
+    background-color: cyan;
+    left: 50px;
+    top: 50px;
+    width: 800px;
+    height: 400px;
+    position: relative;
+  }
+  #two {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+  }
+  #three {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    background-color: rgb(0, 255, 98);
+    width: 100px;
+    height: 100px;
+  }
+</style>
+<body>
+  <div id="one">
+    <div id="two">
+      block #2<br />
+      position:<br>absolute;<br />
+    </div>
+  </div>
+  <div id="three"></div>
+</body>
+</html>
