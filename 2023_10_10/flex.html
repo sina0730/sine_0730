@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+      box-sizing: border-box;
+  }
+  body {
+      margin: 0;
+  }
+  ul {
+      display: flex;
+      list-style-type: none;
+      /* flex-direction: row; */
+      /* flex-direction: row-reverse; */
+      /* flex-direction: column; */
+      flex-direction: column-reverse;
+      padding: 0;
+  }
+  #container {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    background-color: greenyellow;
+  }
+  #container > div {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    margin: 5px;
+    padding: 5px;
+    flex-wrap: wrap;
+  }
+</style>
+<body>
+  <ul>
+    <li>시나모롤</li>
+    <li>쿠로미</li>
+    <li>폼폼푸린</li>
+    <li>포차코</li>
+    <li>마이멜로디</li>
+  </ul>
+
+  <div id="container">
+    플렉스 컨테이너 안에 있는 플레스 아이템입니다.
+    <!-- <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div> -->
+  </div>
+</body>
+</html>
