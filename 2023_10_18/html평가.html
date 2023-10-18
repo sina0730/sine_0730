@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html 평가</title>
+  </head>
+  <style>
+    fieldset {
+      width: 100%;
+      height: auto;
+      border-color: red;
+    }
+    legend {
+      background-color: black;
+      color: white;
+      border: 1px solid red;
+    }
+  </style>
+  <body>
+    <p>고객명 : <input type="text" name="name" placeholder="홍길동" /></p>
+    <p>
+      전화번호 :
+      <input
+        type="tel"
+        name="tel"
+        placeholder="010-1234-1234"
+        pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}"
+        title="010-1234-1234"
+      />
+    </p>
+    <p>
+      Email : <input type="email" name="email" placeholder="○○○○○@○○○.com" />
+    </p>
+    <form accept="proc_form.jsp">
+      <fieldset>
+        <legend>피자 사이즈</legend>
+        <p>
+          <label for="small">Small</label>
+          <input type="radio" name="gender" id="small" /> <br />
+        </p>
+        <p>
+          <label for="medium">Medium</label>
+          <input type="radio" name="gender" id="medium" /> <br />
+        </p>
+        <p>
+          <label for="large">Large</label>
+          <input type="radio" name="gender" id="large" /> <br />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>토핑 선택</legend>
+        <p>
+          <label for="1">베이컨</label>
+          <input type="checkbox" name="la" id="1" />
+        </p>
+        <p>
+          <label for="2">치즈</label>
+          <input type="checkbox" name="la" id="2" />
+        </p>
+
+        <p>
+          <label for="3">양파</label>
+          <input type="checkbox" name="la" id="3" />
+        </p>
+
+        <p>
+          <label for="4">버섯</label>
+          <input type="checkbox" name="la" id="4" />
+        </p>
+      </fieldset>
+    </form>
+    <p>희망배송시간 : <input type="time" name="time" /></p>
+    <p>
+      배송시 요청사항 : <br />
+      <textarea rows="2" cols="30"></textarea>
+    </p>
+
+    <input type="submit" value="주문하기" />
+    <input type="reset" value="다시 선택하기" />
+  </body>
+</html>
