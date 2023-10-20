@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>filter</title>
+</head>
+<style>
+  img {
+    transition: all 3s linear;
+  }
+  img:hover {
+    /* blur : 이미지에 흐림효과 적용 */
+    /* filter: blur(5px); */
+
+    /* brightness : 이미지 밝기 조정 */
+    /* filter: brightness(80%); */
+
+    /* contrast : 이미지의 대비 조정 */
+    /* filter: contrast(140%); */
+
+    /* 
+     drop-shadow : 이미지에 그림자 효과 적용
+     drop-shadow (h-shadow v-shadow blur spread color);
+     h-shadow - 필수, 가로 그림자의 픽셀값 (음수값은 그림자의 위치가 왼쪽)
+     v-shadow - 필수, 세로 그림자의 픽셀값 (음수값은 그림자의 위치가 위쪽)
+     blur - 선택, 흐림정도 픽셀값 (음수값 비허용)
+     spread - 선택, 번짐정도 픽셀값 (음수값 허용)
+     color - 선택, 그림자 색상
+    */
+    /*     
+     -webkit-filter: drop-shadow(8px 8px 10px rgb(140, 231, 245));
+     -o-filter: drop-shadow(8px 8px 10px rgb(124, 191, 246));
+     -ms-filter: drop-shadow(8px 8px 10px rgb(240, 197, 227));
+     -f-filter: drop-shadow(8px 8px 10px rgb(253, 127, 238)); 
+    */
+    /* filter: drop-shadow(8px 8px 10px rgb(194, 161, 15)); */
+
+    /* grayscale : 이미지를 회색조로 변환 */
+    /* filter: grayscale(80%); */
+
+    /* hue-rotate : 이미지 색조 회전을 적용 */
+    /* filter: hue-rotate(240deg); */
+
+    /* sepia : 이미지를 세피아로 변환 */
+    filter: sepia(100%);
+  }
+</style>
+<body>
+  <h1>Filter</h1>
+  <img src="../resources/img/valorant.jpg" />
+</body>
+</html>
