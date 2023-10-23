@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var x; // undefined
+    // document.write(`<h1>${x}</h1>`);
+    document.write(x + "<br>");
+    x = 1; // 좌변에다가 우변에 있는 값을 할당 함.
+    // document.write(`<h1>${x}</h1>`);
+    document.write(x + "<br>");
+    let y;
+    document.write(y + "<br>");
+    y = 10;
+    document.write(y + "<br>");
+    // const z 는 반드시 선언과 동시에 초기화가 되어야 함.
+    const z = 0;
+    document.write(z + "<br>");
+    z = 10;
+    document.write(z + "<br>");
+
+    function add (a, b) {
+      let sum = a + b;
+    }
+    function sub (a, b) {
+      let res = a - b;
+    }
+    window.onload = function () {
+      abb (4, 5)
+      document,write("add=" + sum); //오류 , 반환값을 이용
+      sub (10, 4)
+      document,write("add=" + sum); //오류 , 반환값을 이용
+    }
+  </script>
+</html>
