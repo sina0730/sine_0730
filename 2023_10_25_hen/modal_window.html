@@ -17,6 +17,7 @@
   </head>
   <body>
     <h1>Hello World!</h1>
+    <button id="modal_open" type="button">모달창 열기</button>
     <p>
       어딘가 처음으로 낮선 하늘을 바라봐 온종일 내 머릿속을 흔들에 기억에 잠시만
       함께하고 싶은데 내 속에 참 나도 모르는 아이가 계속 맹돌아 너를 찾고 있어
@@ -39,5 +40,14 @@
         </div>
       </div>
     </div>
+    <script>
+      document.getElementById("modal_open").onclick = function () {
+        document.getElementById("modal_back").style.display = "block";
+      };
+
+      document.getElementById("modal_close").onclick = function () {
+        document.getElementById("modal_back").style.display = "none";
+      };
+    </script>
   </body>
 </html>
