@@ -6,20 +6,14 @@
     <title>Document</title>
   </head>
   <body>
-    <p>버튼을 누르면 3초 마다 경고 박스가 화면에 표시됩니다.</p>
+    <p>버튼을 누르면 3초 후에 경고 박스가 화면에 표시됩니다.</p>
     <button onclick="showAlert()">눌러보세요</button>
-    <button onclick="stopInterval()">반복취소버튼</button>
   </body>
   <script>
-    let startInterval;
     function showAlert() {
-      startInterval = setInterval(function () {
-        alert("복습하자.");
-      }, 2000);
-    }
-
-    function stopInterval() {
-      clearInterval(startInterval);
+      setTimeout(function () {
+        alert("setTimeout()을 사용하여 3초 이후에 표시되었습니다.");
+      }, 3000);
     }
   </script>
 </html>
