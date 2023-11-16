@@ -1,0 +1,32 @@
+#wrapper {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, gray, white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#imgWrapper {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border: 5px solid black ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#imgWrapper.on {
+  border: 20px solid black;
+}
+img {
+  width: 50%;
+  height: 50%;
+  filter: 0;
+}
+img.on {
+  filter: opacity(0.5) drop-shadow(0 0 0 red) saturate(1000%) blur(3px);
+}
+img:hover {
+  cursor: pointer;
+}
