@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>01-typingGame</title>
-    <link rel="stylesheet" href="/2023_11_20/01-typingGame.css" />
+    <link rel="stylesheet" href="01-typingGame.css" />
   </head>
   <body>
     <div id="container">
-      <input id="input" type="text" placeholder="단어를 입력하세요" />
+      <input id="input" type="text" placeholder="단어를 입력하세요." />
     </div>
   </body>
   <script>
@@ -45,23 +45,47 @@
       });
     }
 
+    function wordRain() {
+      const words = document.querySelectorAll(".word");
+      console.log(words[0].getBoundingClientRect().bottom);
+      setInterval(function () {
+        words.forEach(function (el) {
+          const rectTop = el.getBoundingClientRect().top;
+          el.style.top = `${rectTop - 75}px`;
+          console.log(el.style.top);
+          if (el.getBoundingClientRect().bottom > 710) {
+            // alert("game Over");
+            el.remove();
+          }
+          // const colorArr = [];
+          // for (let i = 0; i < 3; i++) {
+          //   colorArr.push(Math.floor(Math.random() * 256));
+          // }
+          // el.style.color = `rgb(${colorArr.toString()})`;
+        });
+      }, 1000);
+    }
+
     const input = document.querySelector("#input");
     input.addEventListener("change", function () {
       const word = document.querySelector(`span[id=${input.value}]`);
-      console.log(word);
       if (word != null) {
         word.remove();
         const leftWords = document.querySelectorAll(".word");
-        if(leftWords.length == 0){
-          alert("Success!👏🏻");
-          if(confirm("재도전하실?")) {
+        if (leftWords.length == 0) {
+          alert("Success!👏");
+          if (confirm("재도전하실?")) {
             window.location.reload();
           }
         }
       }
+
       input.value = "";
     });
 
     init();
+    wordRain();
+    input.focus();
   </script>
 </html>
+
