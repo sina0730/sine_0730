@@ -38,5 +38,14 @@
       const newName = prompt("새로운 이름을 입력해주세요.");
       $("#user").val(newName);
     });
+
+    $("#btnView").on("click", function () {
+      const name = $("#user").val();
+      const gender = $("[name=gend]:checked").val();
+      const intro = $("textarea").val();
+      const job = $(":selected").val();
+
+      alert(`${name}, ${gender}, ${intro}, ${job}`);
+    });
   </script>
 </html>
